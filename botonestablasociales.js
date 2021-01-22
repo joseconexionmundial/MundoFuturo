@@ -1,0 +1,36 @@
+$("#botonhawking").click(function(){
+    $("#principalDerechaSociales,#divsocialheras").hide();
+    $("#principalDerechaSociales,#divsocialkjaer").hide();
+    $("#principalDerechaSociales,#divsocialdans").hide();
+    $("#principalDerechaSociales,#divsocialleonhard").hide();
+    $("#principalDerechaSociales,#hawkingnationalgeographics").show();
+});
+$("#botonheras").click(function(){
+    $("#principalDerechaSociales,#hawkingnationalgeographics").hide();
+    $("#principalDerechaSociales,#divsocialkjaer").hide();
+    $("#principalDerechaSociales,#divsocialdans").hide();
+    $("#principalDerechaSociales,#divsocialleonhard").hide();
+    $("#principalDerechaSociales,#divsocialheras").show();
+});
+$("#botonmituno").click(function(){
+    $("#principalDerechaSociales,#hawkingnationalgeographics").hide();
+    $("#principalDerechaSociales,#divsocialheras").hide();
+    $("#principalDerechaSociales,#divsocialdans").hide();
+    $("#principalDerechaSociales,#divsocialleonhard").hide();
+    $("#principalDerechaSociales,#divsocialkjaer").show();
+});
+$("#botondans").click(function(){
+    $("#principalDerechaSociales,#hawkingnationalgeographics").hide();
+    $("#principalDerechaSociales,#divsocialheras").hide();
+    $("#principalDerechaSociales,#divsocialkjaer").hide();
+    $("#principalDerechaSociales,#divsocialleonhard").hide();
+    $("#principalDerechaSociales,#divsocialdans").show();
+    
+});
+$("#botonleonhard").click(function(){
+    $("#principalDerechaSociales,#hawkingnationalgeographics").hide();
+    $("#principalDerechaSociales,#divsocialheras").hide();
+    $("#principalDerechaSociales,#divsocialkjaer").hide();
+    $("#principalDerechaSociales,#divsocialdans").hide();
+    $("#principalDerechaSociales,#divsocialleonhard").show();
+});

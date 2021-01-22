@@ -1,0 +1,122 @@
+$("#pibespana2021").click(function(){
+    $("#principalDerechaEconomia,#evolucionibex35").hide();
+    $("#principalDerechaEconomia,#pib202122bankinter").hide();
+    $("#principalDerechaEconomia,#espana2033").hide();
+    $("#principalDerechaEconomia,#mundiales").hide();
+    $("#principalDerechaEconomia,#divsaxobank").hide();
+    $("#principalDerechaEconomia,#divbbvaresearch").hide();
+    $("#principalDerechaEconomia,#divmafius").hide();
+    $("#principalDerechaEconomia,#divocde").hide();
+    $("#principalDerechaEconomia,#divfmi").hide();
+    $("#principalDerechaEconomia,#registroPIBEspana").show();
+});
+$("#bbvaibex35").click(function(){
+    $("#principalDerechaEconomia,#registroPIBEspana").hide();
+    $("#principalDerechaEconomia,#pib202122bankinter").hide();
+    $("#principalDerechaEconomia,#espana2033").hide();
+    $("#principalDerechaEconomia,#mundiales").hide();
+    $("#principalDerechaEconomia,#divsaxobank").hide();
+    $("#principalDerechaEconomia,#divbbvaresearch").hide();
+    $("#principalDerechaEconomia,#divmafius").hide();
+    $("#principalDerechaEconomia,#divocde").hide();
+    $("#principalDerechaEconomia,#divfmi").hide();
+    $("#principalDerechaEconomia,#evolucionibex35").show();
+});
+$("#bankinterpib").click(function(){
+    $("#principalDerechaEconomia,#registroPIBEspana").hide();
+    $("#principalDerechaEconomia,#evolucionibex35").hide();
+    $("#principalDerechaEconomia,#espana2033").hide();
+    $("#principalDerechaEconomia,#mundiales").hide();
+    $("#principalDerechaEconomia,#divsaxobank").hide();
+    $("#principalDerechaEconomia,#divbbvaresearch").hide();
+    $("#principalDerechaEconomia,#divmafius").hide();
+    $("#principalDerechaEconomia,#divocde").hide();
+    $("#principalDerechaEconomia,#divfmi").hide();
+    $("#principalDerechaEconomia,#pib202122bankinter").show();
+});
+$("#espana2033pwc").click(function(){
+    $("#principalDerechaEconomia,#registroPIBEspana").hide();
+    $("#principalDerechaEconomia,#evolucionibex35").hide();
+    $("#principalDerechaEconomia,#pib202122bankinter").hide();
+    $("#principalDerechaEconomia,#mundiales").hide();
+    $("#principalDerechaEconomia,#divsaxobank").hide();
+    $("#principalDerechaEconomia,#divbbvaresearch").hide();
+    $("#principalDerechaEconomia,#divmafius").hide();
+    $("#principalDerechaEconomia,#divocde").hide();
+    $("#principalDerechaEconomia,#divfmi").hide();
+    $("#principalDerechaEconomia,#espana2033").show();
+});
+$("#mundialbc").click(function(){
+    $("#principalDerechaEconomia,#registroPIBEspana").hide();
+    $("#principalDerechaEconomia,#evolucionibex35").hide();
+    $("#principalDerechaEconomia,#pib202122bankinter").hide();
+    $("#principalDerechaEconomia,#espana2033").hide();
+    $("#principalDerechaEconomia,#divsaxobank").hide();
+    $("#principalDerechaEconomia,#divbbvaresearch").hide();
+    $("#principalDerechaEconomia,#divmafius").hide();
+    $("#principalDerechaEconomia,#divocde").hide();
+    $("#principalDerechaEconomia,#divfmi").hide();
+    $("#principalDerechaEconomia,#mundiales").show();
+    
+});
+$("#mundialsaxo").click(function(){
+    $("#principalDerechaEconomia,#registroPIBEspana").hide();
+    $("#principalDerechaEconomia,#evolucionibex35").hide();
+    $("#principalDerechaEconomia,#pib202122bankinter").hide();
+    $("#principalDerechaEconomia,#espana2033").hide();
+    $("#principalDerechaEconomia,#mundiales").hide();
+    $("#principalDerechaEconomia,#divbbvaresearch").hide();
+    $("#principalDerechaEconomia,#divmafius").hide();
+    $("#principalDerechaEconomia,#divocde").hide();
+    $("#principalDerechaEconomia,#divfmi").hide();
+    $("#principalDerechaEconomia,#divsaxobank").show();
+});
+$("#mundialbbva").click(function(){
+    $("#principalDerechaEconomia,#registroPIBEspana").hide();
+    $("#principalDerechaEconomia,#evolucionibex35").hide();
+    $("#principalDerechaEconomia,#pib202122bankinter").hide();
+    $("#principalDerechaEconomia,#espana2033").hide();
+    $("#principalDerechaEconomia,#mundiales").hide();
+    $("#principalDerechaEconomia,#divsaxobank").hide();
+    $("#principalDerechaEconomia,#divmafius").hide();
+    $("#principalDerechaEconomia,#divocde").hide();
+    $("#principalDerechaEconomia,#divfmi").hide();
+    $("#principalDerechaEconomia,#divbbvaresearch").show();
+});
+$("#espanamafius").click(function(){
+    $("#principalDerechaEconomia,#registroPIBEspana").hide();
+    $("#principalDerechaEconomia,#evolucionibex35").hide();
+    $("#principalDerechaEconomia,#pib202122bankinter").hide();
+    $("#principalDerechaEconomia,#espana2033").hide();
+    $("#principalDerechaEconomia,#mundiales").hide();
+    $("#principalDerechaEconomia,#divsaxobank").hide();
+    $("#principalDerechaEconomia,#divbbvaresearch").hide();
+    $("#principalDerechaEconomia,#divocde").hide();
+    $("#principalDerechaEconomia,#divfmi").hide();
+    $("#principalDerechaEconomia,#divmafius").show();
+});
+$("#espanaocde").click(function(){
+    $("#principalDerechaEconomia,#registroPIBEspana").hide();
+    $("#principalDerechaEconomia,#evolucionibex35").hide();
+    $("#principalDerechaEconomia,#pib202122bankinter").hide();
+    $("#principalDerechaEconomia,#espana2033").hide();
+    $("#principalDerechaEconomia,#mundiales").hide();
+    $("#principalDerechaEconomia,#divsaxobank").hide();
+    $("#principalDerechaEconomia,#divbbvaresearch").hide();
+    $("#principalDerechaEconomia,#divmafius").hide();
+    $("#principalDerechaEconomia,#divfmi").hide();
+    $("#principalDerechaEconomia,#divocde").show();
+});
+$("#mundialfmi").click(function(){
+    $("#principalDerechaEconomia,#registroPIBEspana").hide();
+    $("#principalDerechaEconomia,#evolucionibex35").hide();
+    $("#principalDerechaEconomia,#pib202122bankinter").hide();
+    $("#principalDerechaEconomia,#espana2033").hide();
+    $("#principalDerechaEconomia,#mundiales").hide();
+    $("#principalDerechaEconomia,#divsaxobank").hide();
+    $("#principalDerechaEconomia,#divbbvaresearch").hide();
+    $("#principalDerechaEconomia,#divmafius").hide();
+    $("#principalDerechaEconomia,#divocde").hide();
+    $("#principalDerechaEconomia,#divfmi").show();
+
+});

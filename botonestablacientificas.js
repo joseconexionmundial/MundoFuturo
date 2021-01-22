@@ -1,0 +1,35 @@
+$("#botonaragonvera").click(function(){
+    $("#principalDerechaCientificas,#divdamascio").hide();
+    $("#principalDerechaCientificas,#divfacundo").hide();
+    $("#principalDerechaCientificas,#divcasals").hide();
+    $("#principalDerechaCientificas,#divnegreira").hide();
+    $("#principalDerechaCientificas,#divaragonvera").show();
+});
+$("#botondamasio").click(function(){
+    $("#principalDerechaCientificas,#divaragonvera").hide();
+    $("#principalDerechaCientificas,#divfacundo").hide();
+    $("#principalDerechaCientificas,#divcasals").hide();
+    $("#principalDerechaCientificas,#divnegreira").hide();
+    $("#principalDerechaCientificas,#divdamascio").show();
+});
+$("#botonfacundo").click(function(){
+    $("#principalDerechaCientificas,#divaragonvera").hide();
+    $("#principalDerechaCientificas,#divdamascio").hide();
+    $("#principalDerechaCientificas,#divcasals").hide();
+    $("#principalDerechaCientificas,#divnegreira").hide();
+    $("#principalDerechaCientificas,#divfacundo").show();
+});
+$("#botoncasals").click(function(){
+    $("#principalDerechaCientificas,#divaragonvera").hide();
+    $("#principalDerechaCientificas,#divdamascio").hide();
+    $("#principalDerechaCientificas,#divfacundo").hide();
+    $("#principalDerechaCientificas,#divnegreira").hide();
+    $("#principalDerechaCientificas,#divcasals").show();
+});
+$("#botonnegreira").click(function(){
+    $("#principalDerechaCientificas,#divaragonvera").hide();
+    $("#principalDerechaCientificas,#divdamascio").hide();
+    $("#principalDerechaCientificas,#divfacundo").hide();
+    $("#principalDerechaCientificas,#divcasals").hide();
+    $("#principalDerechaCientificas,#divnegreira").show();
+});

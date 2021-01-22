@@ -1,0 +1,147 @@
+header{
+    background-image: url("imagensatelite.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+h1{
+    color: antiquewhite;
+}
+h3{
+    text-align: center;
+    color:black;
+}
+header nav{
+    overflow: hidden;
+}
+header nav ul{
+    margin: 1px;
+    margin-left: -40px;
+    list-style: none;
+}
+header nav ul li{
+    margin-left: 5px;
+    float: left;
+}
+header nav ul li button{
+    background-color:darkgrey;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+header nav ul li button:hover{
+    background: rgba(100,35,147,65);
+    color: antiquewhite;
+}
+#explicacionPagina{
+    border: 2px double tomato;
+    height: 100px;
+    width: 49%;            
+    margin: auto;
+    padding: 5px;
+    font-style: italic;
+    text-align: justify;
+}
+/*#botonCerrarExplicacion{
+    margin-left: 600px;
+}*/
+#botoncerrarBotonExplicacion{
+    margin-left: 45%;
+}
+#seccionEconomia{
+    width: 50%;
+    border: 2px solid rgba(109,21,22,1.00);
+    border-right: 6px solid darkblue;
+    float: left;
+}
+#seccionSociales{
+    width: 50%;
+    border: 2px solid rgba(109,21,22,1.00);
+    border-right: 6px solid darkblue;
+    float: left;
+}
+#seccionCientificas{
+    width: 50%;
+    border: 2px solid rgba(109,21,22,1.00);
+    border-right: 6px solid darkblue;
+    float: left;
+}
+#seccionTecnologicas{
+    width: 50%;
+    border: 2px solid rgba(109,21,22,1.00);
+    border-right: 6px solid darkblue;
+    float: left;
+}
+#seccionPoliticas{
+    width: 50%;
+    border: 2px solid rgba(109,21,22,1.00);
+    border-right: 6px solid darkblue;
+    float: left;
+}
+#principalDerechaEconomia{
+    width: 49%;
+    border: 2px solid rgba(109,21,22,1.00);
+    float: right;
+}
+#principalDerechaSociales{
+    width: 49%;
+    border: 2px solid rgba(109,21,22,1.00);
+    float: right;
+}
+#principalDerechaCientificas{
+    width: 49%;
+    border: 2px solid rgba(109,21,22,1.00);
+    float: right;
+}
+#principalDerechaTecnologicas{
+    width: 49%;
+    border: 2px solid rgba(109,21,22,1.00);
+    float: right;
+}
+#principalDerechaPoliticas{
+    width: 49%;
+    border: 2px solid rgba(109,21,22,1.00);
+    float: right;
+}
+.tabla{
+    width: 100%;
+}
+#explicacionPaginaInicio{
+    border: 2px solid blue;
+    text-align: justify;
+    width: 50%;
+    margin: 20px auto;
+    
+}
+#explicacionPaginaInicio p{
+    margin: 10px 10px;
+}
+#explicacionPaginaInicio p::first-letter{
+    font-size: 30px;
+    font-weight: bold;
+    color: crimson;
+}
+.imagenes{
+    width: 100%;
+    height: 300px;
+}
+footer{
+    background-color:chocolate;
+}
+.tituloTabla{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    color:darkblue;
+}
+th{
+    border-bottom: teal;
+}
+.global{
+    width: 98%;
+    height: 150px;
+    overflow: scroll;
+    margin: 8px;
+    text-align: justify;
+}

@@ -1,0 +1,15 @@
+$("#botonautor").click(function(){
+    $("#principalDerechaPoliticas,#divpricewc").hide();
+    $("#principalDerechaPoliticas,#divandresalfonso").hide();
+    $("#principalDerechaPoliticas,#divautor").show();
+});
+$("#botonpricewc").click(function(){
+    $("#principalDerechaPoliticas,#divautor").hide();
+    $("#principalDerechaPoliticas,#divandresalfonso").hide();
+    $("#principalDerechaPoliticas,#divpricewc").show();
+});
+$("#botonandresalfonso").click(function(){
+    $("#principalDerechaPoliticas,#divpricewc").hide();
+    $("#principalDerechaPoliticas,#divautor").hide();
+    $("#principalDerechaPoliticas,#divandresalfonso").show();
+});

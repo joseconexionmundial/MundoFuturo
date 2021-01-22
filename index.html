@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Keywords" content="mundo, futuro, prediccion, proyeccion">
+    <meta name="Description" content="Sobre el mundo que viene">
+    <title>MundoFuturo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="formatoindex.css">
+    <style>
+        
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#explicacionPagina").hide();
+            $("#seccionEconomia").hide();
+            $("#seccionSociales").hide();
+            $("#seccionCientificas").hide();
+            $("#seccionTecnologicas").hide();
+            $("#seccionPoliticas").hide();
+            $("#principalDerechaEconomia").hide();
+            $("#principalDerechaSociales").hide();
+            $("#principalDerechaCientificas").hide();
+            $("#principalDerechaTecnologicas").hide();
+            $("#principalDerechaPoliticas").hide();
+            $("#explicacionPaginaInicio").show();
+/*----------------------------BOTÓN ECONÓMICAS------------------------------------------*/
+            $("#botonEconomicas").click(function(){
+                $("#explicacionPaginaInicio").hide();
+                $("footer").hide();
+                $("#principalDerechaEconomia").hide();
+                $("#principalDerechaSociales").hide();
+                $("#principalDerechaCientificas").hide();
+                $("#principalDerechaTecnologicas").hide();
+                $("#principalDerechaPoliticas").hide();
+                $("#seccionSociales").hide();
+                $("#seccionCientificas").hide();
+                $("#seccionTecnologicas").hide();
+                $("#seccionPoliticas").hide();
+                $("#seccionEconomia").show();
+            });
+            /*Botones de registro de tabla de Económicas por orden.*/
+            $.getScript("botonestablaeconomia.js");
+            /*FIN DE Botones de registro de tabla de Económicas.*/
+/*----------------------------FIN DE ECONÓMICAS--------------------------------------*/
+
+/*----------------------------BOTÓN SOCIALES-----------------------------------------*/
+            $("#botonSociales").click(function(){
+                $("#explicacionPaginaInicio").hide();
+                $("footer").hide();
+                $("#principalDerechaEconomia").hide();
+                $("#principalDerechaSociales").hide();
+                $("#principalDerechaCientificas").hide();
+                $("#principalDerechaTecnologicas").hide();
+                $("#principalDerechaPoliticas").hide();
+                $("#seccionEconomia").hide();
+                $("#seccionCientificas").hide();
+                $("#seccionTecnologicas").hide();
+                $("#seccionPoliticas").hide();
+                $("#seccionSociales").show();
+            });
+
+            /*Botones de registro de tabla de Sociales por orden.*/
+            $.getScript("botonestablasociales.js");
+            /*FIN DE Botones de registro de tabla de Sociales.*/
+
+/*----------------------FIN DE SOCIALES------------------------------------------*/
+/*----------------------------BOTÓN CIENTÍFICAS----------------------------------*/
+            $("#botonCientificas").click(function(){
+                $("#explicacionPaginaInicio").hide();
+                $("footer").hide();
+                $("#principalDerechaEconomia").hide();
+                $("#principalDerechaSociales").hide();
+                $("#principalDerechaCientificas").hide();
+                $("#principalDerechaTecnologicas").hide();
+                $("#principalDerechaPoliticas").hide();
+                $("#seccionEconomia").hide();
+                $("#seccionSociales").hide();
+                $("#seccionTecnologicas").hide();
+                $("#seccionPoliticas").hide();
+                $("#seccionCientificas").show();
+
+            });
+
+            /*Botones de registro de tabla de Científicas por orden.*/
+            $.getScript("botonestablacientificas.js");
+            /*FIN DE Botones de registro de tabla de Científicas.*/
+
+/*----------------------FIN DE CIENTÍFICAS------------------------------------------*/
+/*--------------------INICIO DE TECNOLÓGICAS----------------------------------------*/
+            $("#botonTecnologicas").click(function(){
+                $("#explicacionPaginaInicio").hide();
+                $("footer").hide();
+                $("#principalDerechaEconomia").hide();
+                $("#principalDerechaSociales").hide();
+                $("#principalDerechaCientificas").hide();
+                $("#principalDerechaTecnologicas").hide();
+                $("#principalDerechaPoliticas").hide();
+                $("#seccionEconomia").hide();
+                $("#seccionSociales").hide();
+                $("#seccionCientificas").hide();
+                $("#seccionPoliticas").hide();
+                $("#seccionTecnologicas").show();
+
+            });
+
+            /*Botones de registro de tabla de Tecnológicas por orden.*/
+            $.getScript("botonestablatecnologicas.js");
+            /*FIN DE Botones de registro de tabla de Tecnológicas.*/
+
+/*---------------------FIN DE TECNOLÓGICAS------------------------------------------*/
+
+/*---------------------INICIO DE POLÍTICAS------------------------------------------*/
+            $("#botonPoliticas").click(function(){
+                $("#explicacionPaginaInicio").hide();
+                $("footer").hide();
+                $("#principalDerechaEconomia").hide();
+                $("#principalDerechaSociales").hide();
+                $("#principalDerechaCientificas").hide();
+                $("#principalDerechaTecnologicas").hide();
+                $("#principalDerechaPoliticas").hide();
+                $("#seccionEconomia").hide();
+                $("#seccionSociales").hide();
+                $("#seccionCientificas").hide();
+                $("#seccionTecnologicas").hide();
+                $("#seccionPoliticas").show();
+
+            });
+
+            /*Botones de registro de tabla de Políticas por orden.*/
+            $.getScript("botonestablapoliticas.js");
+            /*FIN DE Botones de registro de tabla de Políticas.*/
+
+        /*---------------------FIN DE POLÍTICAS------------------------------*/
+
+            $("#botonAcercaDe").click(function(){
+                $("#explicacionPagina").show();
+            });
+            $("#cerrarBotonExplicacion").click(function(){
+                $("#explicacionPagina").hide();
+            });
+            $("#botonInicio").click(function(){
+                location.reload();
+            });
+        });
+       
+    </script>
+</head>
+<body>
+    <header>
+        <h1 align="center">EL MUNDO DEL FUTURO</h2>
+        <h3 align="center">PROYECCIONES</h3>
+        <nav>
+            <ul>
+                <li><button id="botonInicio">Inicio página</button></li>
+                <li><button id="botonEconomicas">Económicas</button></li>
+                <li><button id="botonSociales">Sociales</button></li>
+                <li><button id="botonCientificas">Científicas</button></li>
+                <li><button id="botonTecnologicas">Tecnológicas</button></li>
+                <li><button id="botonPoliticas">Políticas</button></li>
+              <!--  <li><button id="botonEnlacesExternos">Enlaces externos</button></li>-->
+                <li><button id="botonAcercaDe">Acerca de</button></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="explicacionPagina">
+        Esta web incluye una selección de vínculos a artículos, 
+        informes y conferencias de expertos sobre el futuro en general, 
+        todos ellos extraídos de la Red y con su link correspondiente. 
+        Poco a poco iré incorporando más. Espero que sea de vuestro interés.
+        <br>
+        <div id="botoncerrarBotonExplicacion"><button id="cerrarBotonExplicacion">Cerrar</button></div>
+    </div>
+    
+    <div id="explicacionPaginaInicio">
+        <img src="imagensatelitedos.jpg" class="imagenes">
+        <p>
+            En esta página encontrarás algunas de las predicciones que particulares 
+            e instituciones, públicas y privadas, hacen sobre el futuro, cercano y 
+            lejano, nacional e internacional, en sus distintos ámbitos. Se hace 
+            evidente la dificultad para seguir el grado de su cumplimiento, pero ello 
+            no resta, en absoluto, el interés por la especulación, de carácter 
+            científico, sobre el desarrollo del conocimiento humano y las condiciones 
+            futuras de nuestra vida. Las valoraciones sobre los hechos del futuro 
+            quedarán, de forma prácticamente íntegra, en manos del lector de esta web.
+        </p>
+        <img src="imagenuno.jpg" class="imagenes">
+    </div>
+    
+    <main id="principalIzquierda">
+<!--------------------------INICIO SECCIÓN DE ECONOMÍA---------------------------------------------->
+        <section id="seccionEconomia">
+            <h3 class="tituloTabla">Predicciones económicas</h3>
+            <hr>
+            <table class="tabla">
+                <tr>
+                    <th>Asunto</th>
+                    <th>Fecha</th>
+                    <th>Fuente</th>
+                    <th>Resumen</th>
+                </tr>
+                <tr align="center">
+
+                    <td>PIB para España 2021</td>
+                    <td>11-12-2020</td>
+                    <td><a href="https://www.eleconomista.es/economia/noticias/10937802/
+                        12/20/El-Banco-de-Espana-mejora-levemente-sus-previsiones-pero-
+                        observa-un-dano-irreparable-en-el-tejido-productivo-y-en-el-
+                        empleo.html" target="_blank">El Economista</a>
+                    </td>
+                    <td><button id="pibespana2021">Pulsa</button></td>
+                </tr>
+                <tr align="center">
+                    <td>Evolución IBEX-35 2021</td>
+                    <td>10-12-2020</td>
+                    <td><a href="https://www.bbva.com/es/bbva-asset-management-la-subida-
+de-las-bolsas-puede-superar-holgadamente-el-10-en-2021/"
+                        target="_blank">BBVA Asset Management</a>
+                    </td>
+                    <td><button id="bbvaibex35">Pulsa</button></td>
+                </tr>
+                <tr align="center">
+                    <td>Evolución PIB 2021/22</td>
+                    <td>18-12-2020</td>
+                    <td><a href="https://www.bankinter.com/blog/economia/previsiones-pib-espana"
+                        target="_blank">Grupo Bankinter</a>
+                    </td>
+                    <td><button id="bankinterpib">Pulsa</button></td>
+                </tr>
+                <tr align="center">
+                    <td>Estudio España 2033</td>
+                    <td>No indicada</td>
+                    <td><a href="https://www.pwc.es/es/publicaciones/economia/assets/
+la-economia-espanola-en-2033-resumen-ejecutivo.pdf"
+                        target="_blank">PricewaterhouseCoopers</a>
+                    </td>
+                    <td><button id="espana2033pwc">Pulsa</button></td>
+                </tr>
+                <tr align="center">
+                    <td>Perspectivas mundiales</td>
+                    <td>2021</td>
+                    <td><a href="https://www.bancomundial.org/es/publication/global-economic-prospects"
+                        target="_blank">Banco Mundial</a>
+                    </td>
+                    <td><button id="mundialbc">Pulsa</button></td>
+                </tr>
+                <tr align="center">
+                    <td>Predicciones escandalosas</td>
+                    <td>10-12-2021</td>
+                    <td><a href="https://www.modaes.es/entorno/y-si-el-mundo-vuelve-a-cambiar-en-2021-
+diez-predicciones-escandalosas-para-el-ano-despues-el-covid-19.html"
+                        target="_blank">Saxo Bank</a>
+                    </td>
+                    <td><button id="mundialsaxo">Pulsa</button></td>
+                </tr>
+                <tr align="center">
+                    <td>PIB español 2021</td>
+                    <td>14-01-2021</td>
+                    <td><a href="https://www.expansion.com/economia/2021/01/14/600027b4e5fdea0b538b45fd.html"
+                        target="_blank">BBVA Research</a>
+                    </td>
+                    <td><button id="mundialbbva">Pulsa</button></td>
+                </tr>
+                <tr align="center">
+                    <td>Previsión optimista</td>
+                    <td>15-12-2020</td>
+                    <td><a href="https://www.mafius.com/economia/prevision-economica-de-espana-2021/"
+                        target="_blank">Mafius</a>
+                    </td>
+                    <td><button id="espanamafius">Pulsa</button></td>
+                </tr>
+                <tr align="center">
+                    <td>Previsión OCDE España</td>
+                    <td>01-12-2020</td>
+                    <td><a href="https://www.expansion.com/economia/2020/12/01/5fc619bf468aebc1318b46f6.html"
+                        target="_blank">OCDE</a>
+                    </td>
+                    <td><button id="espanaocde">Pulsa</button></td>
+                </tr>
+                <tr align="center">
+                    <td>Economía global según FMI</td>
+                    <td>Octubre-2020</td>
+                    <td><a href="https://www.imf.org/es/Publications/WEO/Issues/2020/09/30/world-economic-outlook-october-2020"
+                        target="_blank">FIM</a>
+                    </td>
+                    <td><button id="mundialfmi">Pulsa</button></td>
+                </tr>
+                
+            </table>
+        </section> 
+<!------------------------FIN SECCIÓN ECONOMÍA----------------------------------------->
+
+<!-- --------------INICIO SECCIÓN SOCIALES------------------------------------------ -->
+        <section id="seccionSociales">
+
+            <h3 class="tituloTabla">Predicciones sociales</h3>
+                <hr>
+                <table class="tabla">
+                    <tr>
+                        <th>Asunto</th>
+                        <th>Fecha</th>
+                        <th>Fuente</th>
+                        <th>Resumen</th>
+                    </tr>
+                    <tr align="center">
+                        <td>El futuro según Stephen Hawking</td>
+                        <td>11-03-2019</td>
+                        <td><a href="https://www.nationalgeographic.com.es/ciencia/actualidad
+/predicciones-stephen-hawking-para-futuro_12502" target="_blank">National Geographics</a>
+                        </td>
+                        <td><button id="botonhawking">Pulsa</button></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Reflexiones sociedad digital</td>
+                        <td>13-03-2019</td>
+                        <td><a href="https://retina.elpais.com/retina/2020/03/12
+/tendencias/1584018287_038664.html" target="_blank">Rodríguez Heras</a>
+                        </td>
+                        <td><button id="botonheras">Pulsa</button></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Futuro social tecnología</td>
+                        <td>07-12-2019</td>
+                        <td><a href="https://elasombrario.com
+/el-futuro-ya-no-es-lo-que-era-lo-que-nos-espera-con-la-invasion-tecnologica/" 
+                        target="_blank">Enrique Dans</a>
+                        </td>
+                        <td><button id="botondans">Pulsa</button></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Ética digital</td>
+                        <td>No disponible</td>
+                        <td><a href="https://www.iberdrola.com/compromiso-social/etica-en-internet" 
+                        target="_blank">Compromiso social Iberdrola</a>
+                        </td>
+                        <td><button id="botonleonhard">Pulsa</button></td>
+                    </tr>
+                    <tr>
+                        <th>Asunto</th>
+                        <th>Fecha</th>
+                        <th>Fuente</th>
+                        <th>Completo</th>
+                    </tr>
+                    <tr align="center">
+                        <td>Predicción para 2030</td>
+                        <td>13-07-2020</td>
+                        <td><a href="https://www.technologyreview.es/s/11978/asi-sera-2030-segun-siete
+-expertos-en-predicciones-de-futuro" target="_blank">MIT Tecnology</a>
+                        </td>
+                        <td><button id="botonmituno">Pulsa</button></td>
+                    </tr>
+                </table>
+
+        </section>
+        <!-- ----------------FIN SECCIÓN SOCIALES---------------------------------- -->
+        <!------------------INICIO SECCIÓN CIENTÍFICAS----------------------------- -->
+        <section id="seccionCientificas">
+
+            <h3 class="tituloTabla">Predicciones científicas</h3>
+                <hr>
+                <table class="tabla">
+                    <tr>
+                        <th>Asunto</th>
+                        <th>Fecha</th>
+                        <th>Fuente</th>
+                        <th>Completo</th>
+                    </tr>
+                    <tr align="center">
+                        <td>Emociones artificiales</td>
+                        <td>02-09-2020</td>
+                        <td><a href="https://www.bbc.com/mundo/noticias-53889735" 
+                            target="_blank">José Luis Aragón Vera</a>
+                        </td>
+                        <td><button id="botonaragonvera">Pulsa</button></td>
+                    </tr>
+                    <tr align="center">
+                        <td>El futuro del cerebro</td>
+                        <td>13-01-2020</td>
+                        <td><a href="https://www.fundacionbankinter.org/blog/noticia/future-trends-forum
+/el-futuro-del-cerebro-por-antonio-damasio" 
+                            target="_blank">Antonio Damasio</a>
+                        </td>
+                        <td><button id="botondamasio">Pulsa</button></td>
+                    </tr>
+                    <tr>
+                        <th>Asunto</th>
+                        <th>Fecha</th>
+                        <th>Fuente</th>
+                        <th>Resumen</th>
+                    </tr>
+                    <tr align="center">
+                        <td>Evolución futura del cerebro</td>
+                        <td>22-01-2019</td>
+                        <td><a href="https://elpais.com/elpais/2019/01/18/ciencia/1547823921_349942.html" 
+                            target="_blank">Facundo Manes</a>
+                        </td>
+                        <td><button id="botonfacundo">Pulsa</button></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Meteorología y Big Data</td>
+                        <td>No disponible</td>
+                        <td><a href="https://www.meteorologiaenred.com/big-data-meteorologia.html" 
+                            target="_blank">BA Partners | Willis Update | NASA</a>
+                        </td>
+                        <td><button id="botoncasals">Pulsa</button></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Evolución climática hasta 2100</td>
+                        <td>22-03-2018</td>
+                        <td><a href="https://www.quo.es/ser-humano/g71533
+/podemos-predecir-como-sera-el-clima-en-2100/" 
+                            target="_blank">Revista QUO</a>
+                        </td>
+                        <td><button id="botonnegreira">Pulsa</button></td>
+                    </tr>
+                </table>
+
+        </section>
+        <!------------------FIN SECCIÓN CIENTÍFICAS----------------------------------->
+        <!------------------INICIO SECCIÓN TECNOLÓGICAS------------------------------->
+
+        <section id="seccionTecnologicas">
+            <h3 class="tituloTabla">Predicciones tecnológicas</h3>
+                <hr>
+                <table class="tabla">
+                    <tr>
+                        <th>Asunto</th>
+                        <th>Fecha</th>
+                        <th>Fuente</th>
+                        <th>Resumen</th>
+                    </tr>
+                    <tr align="center">
+                        <td>El futuro será del 6G</td>
+                        <td>No disponible</td>
+                        <td><a href="https://www.muyinteresante.es/tecnologia
+/articulo/que-es-el-6g-821558011623" target="_blank">Muy Interesante</a>
+                        </td>
+                        <td><button id="botonromero">Pulsa</button></td>
+                    </tr>
+                </table>
+
+        </section>
+
+        <!------------------FIN SECCIÓN TECNOLÓGICAS---------------------------------->
+        <!------------------INICIO SECCIÓN POLÍTICAS---------------------------------->
+        <section id="seccionPoliticas">
+            <h3 class="tituloTabla">Predicciones políticas&nbsp;&nbsp;&nbsp;&nbsp;
+                <button id="botonautor">Leer nota</button></h3>
+                <hr>         
+                <table class="tabla">        
+                    <tr>
+                        <th>Asunto</th>
+                        <th>Fecha</th>
+                        <th>Fuente</th>
+                        <th>Resumen</th>
+                    </tr>
+                    <tr align="center">
+                        <td>El mundo en el año 2050</td>
+                        <td>No disponible</td>
+                        <td><a href="https://www.pwc.com/co/es/assets/document/el_mundo_en_2050.pdf" 
+                            target="_blank">PricewaterhouseCoopers</a>
+                        </td>
+                        <td><button id="botonpricewc">Pulsa</button></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Distribución energética en 2040</td>
+                        <td>16-12-2019</td>
+                        <td><a href="https://www.eleconomista.es/opinion-blogs/noticias/10253555/12/19
+/Una-vision-de-futuro-el-sector-de-la-energia-en-2040-segun-la-AIE.html" 
+                            target="_blank">Asociación Internacional Energía</a>
+                        </td>
+                        <td><button id="botonandresalfonso">Pulsa</button></td>
+                    </tr>
+                </table>
+
+        </section>
+        <!------------------FIN SECCIÓN POLÍTICAS------------------------------->
+
+    </main>
+    <div id="barraCentral"></div>
+<!-----------------------LADO DERECHO ECONÓMICAS-------------------------------------->
+    <aside id="principalDerechaEconomia">    
+        <div id="registroPIBEspana">
+            <h3>PIB para España 2021(Banco de España)</h3>
+            <div style="margin: 8px; text-align: justify;"><strong>El repunte del producto de la economía en 2021 sería de un 6,8% 
+                 en el escenario central</strong>, cifra que <strong>se elevaría hasta 8,6% en el 
+                 escenario más favorable y se reduciría hasta el 4,2% en el más adverso.</strong> 
+                 "Una parte sustancial de estas diferencias se explica por los distintos 
+                 plazos de vacunación de la población que, entre otras consecuencias, 
+                 dan lugar a un ritmo dispar de recuperación de las actividades que 
+                 conllevan más interacción social y, en particular, las relacionadas con 
+                 el turismo".
+            </div>
+        </div>
+        <div id="evolucionibex35">
+            <h3>Evolución IBEX-35 2021(BBVA Asset Management)</h3>
+            <div style="margin: 8px; text-align: justify;">El año 2021 puede ser bueno o muy bueno en bolsa, especialmente en 
+                el caso de Europa. Dentro del escenario central que maneja la gestora, 
+                incluyendo el pago de dividendos, el Euro Stoxx 50 tendría un potencial del 19,4% en 
+                2021; el S&P 500, del 10,4% y <strong>el Ibex 35, del 19,5%, hasta los 9.400 puntos.</strong>
+            </div>
+        </div>
+        <div id="pib202122bankinter">
+            <h3>PIB para España 2021/22(Bankinter)</h3>
+            <div style="margin: 8px; text-align: justify;">El grupo Bankinter prevé un crecimiento del PIB del +6,5% 
+                a/a en 2021 y +5,2% en 2022.
+            </div>
+        </div>
+        <div id="espana2033">
+            <h3>Estudio España 2033 (PricewaterhouseCoopers)</h3>
+            <div style="margin: 8px; text-align: justify;">El estudio España 2033, que analiza 
+                cómo será nuestra realidad (añadido mío) dentro de veinte años, es el primero del proyecto de PwC 
+                España 2033 nacido con el objetivo de anticiparnos a lo que va a suceder y 
+                convertirnos en cazadores intelectuales de las tendencias que van a determinar 
+                los aspectos esenciales del mundo, de la economía y de la sociedad en los 
+                próximos 20 años.
+            </div>
+        </div>
+        <div id="mundiales">
+            <h3>Perspectivas mundiales (Banco Mundial)</h3>
+            <div style="margin: 8px; text-align: justify;">Luego del colapso ocasionado por la 
+                COVID-19 el año pasado, se prevé que la actividad económica mundial aumentará 
+                un 4 % en 2021. No obstante, se mantendrá muy por debajo de las proyecciones 
+                previas a la pandemia.
+            </div>
+        </div>
+        <div id="divsaxobank">
+            <h3>Después de la COVID-19 (Saxo Bank)</h3>
+            <div style="margin: 8px; text-align: justify;">Los analistas de Saxo Bank han 
+                vuelto a realizar su lista anual de proyecciones imposibles después de un año 
+                que nadie pudo prever.
+            </div>
+        </div>
+        <div id="divbbvaresearch">
+            <h3>Previsión PIB España 2021 (BBVA Research)</h3>
+            <div style="margin: 8px; text-align: justify;">Informe "Situación España": el PIB 
+                español podría haberse contraído un 11% (0,5 puntos menos que en la previsión 
+                anterior) en 2020 pero rebaja la cifra de crecimiento para este año al 5,5% 
+                frente al 6% estimado anteriormente.
+            </div>
+        </div>
+        <div id="divmafius">
+            <h3>Previsión de recuperación (Mafius)</h3>
+            <div style="margin: 8px; text-align: justify;">Se estima una recuperación 
+                radical desde 2021 con la reactivación de las actividades económicas.
+            </div>
+        </div>
+        <div id="divocde">
+            <h3>Previsión de la OCDE sobre España</h3>
+            <div style="margin: 8px; text-align: justify;">La OCDE prevé una caída del PIB de 
+                España del 11,6% en 2020 y un aumento del 5% en 2021.
+            </div>
+        </div>
+        <div id="divfmi">
+            <h3>Previsión evolución mundial FMI</h3>
+            <div style="margin: 8px; text-align: justify;">La economía mundial está comenzando a 
+                dejar atrás los mínimos en los que cayó durante el Gran Confinamiento del mes de 
+                abril. Aunque el largo camino que deberá recorrer la economía mundial para 
+                retomar los niveles de actividad previos a la pandemia sigue siendo susceptible a 
+                obstáculos.
+            </div>
+        </div>
+
+    </aside> 
+<!-----------------FIN LADO DERECHO ECONOMÍA principalDerechaEconomia------------------>
+    
+<!---------------------INICIO LADO DERECHO SOCIALES------------------------------------------->
+    <aside id="principalDerechaSociales">
+
+        <div id="hawkingnationalgeographics">
+            <h3>El futuro según Stephen Hawking</h3>
+            <div style="margin: 8px; text-align: justify;">Stephen Hawking trató de comprender 
+                el mundo a través de la física. Sin embargo, nunca fue demasiado optimista sobre
+                 el devenir de nuestra especie. Así imaginó nuestro futuro (o más bien su fin)
+                  Stephen Hawking. 
+            </div>
+        </div>
+        <div id="divsocialheras">
+            <h3>Reflexiones sobre la sociedad digital</h3>
+            <div style="margin: 8px; text-align: justify;">¿Tiene que llegar una situación 
+                catastrófica en esta sociedad actual para que, con muy alto riesgo, emerjan las 
+                potencialidades que contiene la sociedad digital para crear un nuevo modelo 
+                de vida?
+            </div>
+        </div>
+        <div id="divsocialdans">
+            <h3>Efectos sociales de la implantación tecnológica</h3>
+            <div style="margin: 8px; text-align: justify;">Es una entrevista en la que Enrique 
+                Dans analiza el futuro de la aceptación social y uso de la tecnología, e incluso 
+                aborda, y acepta, la generalización de una renta básica universal.
+            </div>
+        </div>
+        <div id="divsocialleonhard">
+            <h3>Ética en Internet: la clave del futuro digital</h3>
+            <div style="margin: 8px; text-align: justify;">El avance imparable de la tecnología ha hecho que nuestros hábitos y conductas se 
+                transformen y surjan retos y dilemas inéditos que pueden poner en riesgo nuestro 
+                futuro como sociedad digital. ¿La solución? Una nueva ética fundamentada en el 
+                origen del cambio: Internet.
+                "En las próximas dos décadas habrá más cambios propiciados por la tecnología que en 
+                los últimos 300 años", dice el futurista alemán Gerd Leonhard. Esa transformación 
+                traerá consigo peligros, oportunidades y dilemas que habrá que afrontar como 
+                sociedad para que el avance tecnológico sea en beneficio de todos. ¿Cómo? La 
+                mayoría de los expertos coinciden: con una nueva ética de Internet que establezca 
+                las bases para la convivencia y asegure los derechos de los ciudadanos digitales.
+            </div>
+        </div>
+        
+        <div id="divsocialkjaer">
+            <script>
+                    $("#divsocialkjaer").load("textoscompletos.html #textocompletokjaer");
+            </script>
+        </div>
+
+    </aside>
+
+    <!----------------------FIN LADO DERECHO DE SOCIALES------------------------------->
+    <!---------------------INICIO LADO DERECHO CIENTÍFICAS----------------------------->
+    <aside id="principalDerechaCientificas">
+        <div id="divaragonvera">
+            <script>
+                $("#divaragonvera").load("textoscompletos.html #textocompletoaragonvera");
+            </script>
+        </div>
+        <div id="divdamascio">
+            <script>
+                $("#divdamascio").load("textoscompletos.html #textocompletodamasio");
+            </script>
+        </div>
+        <div id="divfacundo">
+            <script>
+                $("#divfacundo").load("textoscompletos.html #textocompletofacundo");
+            </script>
+        </div>
+        <div id="divcasals">
+            <script>
+                $("#divcasals").load("textoscompletos.html #textocompletoclaudicasals");
+            </script>
+        </div>
+        <div id="divnegreira">
+            <script>
+                $("#divnegreira").load("textoscompletos.html #textocompletonegreira");
+            </script>
+        </div>
+    </aside>
+    <!----------------------FIN LADO DERECHO DE CIENTÍFICAS---------------------------->
+
+    <!---------------------INICIO LADO DERECHO TECNOLÓGICAS----------------------------->
+    <aside id="principalDerechaTecnologicas">
+        <div id="divseisgromero">
+            <script>
+                $("#divseisgromero").load("textoscompletos.html #textocompletoromero");
+            </script>
+        </div>
+
+    </aside>
+
+    <!----------------------FIN LADO DERECHO DE TECNOLÓGICAS---------------------------->
+
+    <!---------------------INICIO LADO DERECHO POLÍTICAS----------------------------->
+    <aside id="principalDerechaPoliticas">
+        <div id="divautor">
+            <script>
+                $("#divautor").load("textoscompletos.html #textocompletoautor");
+            </script>
+        </div>
+        <div id="divpricewc">
+            <script>
+                $("#divpricewc").load("textoscompletos.html #textocompletopricewc");
+            </script>
+        </div>
+        <div id="divandresalfonso">
+            <script>
+                $("#divandresalfonso").load("textoscompletos.html #textocompletoandresalfonso");
+            </script>
+        </div>
+        
+    </aside>
+
+    <!----------------------FIN LADO DERECHO DE POLÍTICAS---------------------------->
+
+
+    <footer>
+        <em>Esta página comenzó su andadura en <strong>2021</strong></em>
+        <br>
+        <address>Si tienes alguna información que te gustaría compartir con la comunidad, 
+            por favor, dirígete al siguiente e-mail:  
+            <a href="mailto:joseluisguillensa@gmail.com">José Luis Guillén</a> 
+        </address>
+        <br>
+        <small style="margin-left: 30%"><strong>Esta web ha sido desarrollada íntegramente por José Luis Guillén Sanz
+        </strong></small>
+    </footer>
+</body>
+</html>
