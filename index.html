@@ -46,7 +46,11 @@
                 width: 95%;
             }
         }
-        @media only screen and (max-width: 321px) and (orientation: portrait) {
+        @media screen
+             and (device-width: 320px)
+             and (device-height: 640px)
+             and (-webkit-device-pixel-ratio: 3)
+             and (orientation: portrait) {
             #principalDerechaEconomia,#principalDerechaSociales,#principalDerechaCientificas,#principalDerechaTecnologicas, #principalDerechaPoliticas,#seccionEconomia,#seccionSociales,#seccionCientificas,#seccionTecnologicas,#seccionPoliticas {
                /* width: 85%;*/
                 width: 95%;
